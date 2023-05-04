@@ -3,6 +3,11 @@ import React, { useState } from 'react';
 
 const columns = [
   {
+    title: 'No.',
+    dataIndex: 'num',
+    key: 'num',
+  },
+  {
     title: 'First Name',
     dataIndex: 'firstName',
     key: 'firstName',
@@ -25,7 +30,8 @@ function StudentTable({ data, loading }) {
     firstName: student.firstName,
     familyName: student.familyName,
     dob: student.dob,
-    key: index,
+    num: index,
+    key: student._id,
   }));
   return (
     <div style={{ marginTop: '2rem' }}>
