@@ -17,7 +17,6 @@ const StudentForm = ({ onSubmitSuccess }) => {
       });
       return;
     }
-
     const newStudent = {
       firstName: values.firstName,
       familyName: values.familyName,
@@ -93,7 +92,7 @@ const StudentForm = ({ onSubmitSuccess }) => {
         <div style={{ textAlign: 'center' }}>
           <Form.Item noStyle>
             <Button type='primary' htmlType='submit'>
-              Submit
+              Add
             </Button>
           </Form.Item>
         </div>

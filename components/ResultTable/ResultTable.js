@@ -8,30 +8,30 @@ const columns = [
     key: 'num',
   },
   {
-    title: 'First Name',
-    dataIndex: 'firstName',
-    key: 'firstName',
+    title: 'Course',
+    dataIndex: 'courseName',
+    key: 'courseName',
   },
   {
-    title: 'Family Name',
-    dataIndex: 'familyName',
-    key: 'familyName',
+    title: 'Student Name',
+    dataIndex: 'studentName',
+    key: 'studentName',
   },
   {
-    title: 'Date of Birth',
-    dataIndex: 'dob',
-    key: 'dob',
+    title: 'Score',
+    dataIndex: 'score',
+    key: 'score',
   },
 ];
 
-function StudentTable({ data, loading }) {
+function ResultTable({ data, loading }) {
   const [pageSize, setPageSize] = useState(4);
-  const students = data.map((student, index) => ({
-    firstName: student.firstName,
-    familyName: student.familyName,
-    dob: student.dob,
+  const results = data.map((result, index) => ({
+    courseName: result.courseName,
+    studentName: result.studentName,
+    score: result.score,
     num: index + 1,
-    key: student._id,
+    key: result._id,
   }));
   return (
     <div style={{ marginTop: '2rem' }}>
@@ -39,7 +39,7 @@ function StudentTable({ data, loading }) {
         pagination={{ pageSize }}
         columns={columns}
         loading={loading}
-        dataSource={students}
+        dataSource={results}
         onChange={(pagination) => {
           setPageSize(pagination.pageSize);
         }}
@@ -48,4 +48,4 @@ function StudentTable({ data, loading }) {
   );
 }
 
-export default StudentTable;
+export default ResultTable;

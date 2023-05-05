@@ -11,7 +11,6 @@ const CourseForm = ({ onSubmitSuccess }) => {
       });
       return;
     }
-
     const newCourse = {
       courseName: values.courseName,
     };
@@ -69,7 +68,7 @@ const CourseForm = ({ onSubmitSuccess }) => {
         <div style={{ textAlign: 'center' }}>
           <Form.Item noStyle>
             <Button type='primary' htmlType='submit'>
-              Submit
+              Add
             </Button>
           </Form.Item>
         </div>
