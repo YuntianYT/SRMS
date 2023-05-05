@@ -10,7 +10,11 @@ The project has been deployed on **Vercel** and can be accessed directly through
 
 ## Local Setup
 
-If you would like to run the project locally and see the results, use the following commands to install and run in dev enviroment:
+If you would like to run the project locally and see the results:
+
+1. Clone the repo: `git clone https://github.com/soyoutry/SRMS.git`
+2. Checkout to the directory: SRMS
+3. use the following commands to install and run in dev environment:
 
 ```bash
 yarn install
