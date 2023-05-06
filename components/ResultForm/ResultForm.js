@@ -87,7 +87,7 @@ const ResultForm = ({ onSubmitSuccess }) => {
         <Form.Item
           label='Course Name'
           name='courseName'
-          rules={[{ required: true, message: 'Please input first name' }]}
+          rules={[{ required: true, message: 'Please select course name' }]}
         >
           <Select
             showSearch
@@ -105,7 +105,7 @@ const ResultForm = ({ onSubmitSuccess }) => {
         <Form.Item
           label='Student Name'
           name='studentName'
-          rules={[{ required: true, message: 'Please input family name' }]}
+          rules={[{ required: true, message: 'Please select student name' }]}
         >
           <Select
             showSearch
