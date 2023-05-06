@@ -13,7 +13,7 @@ const columns = [
     key: 'courseName',
   },
   {
-    title: 'Student Name',
+    title: 'Student',
     dataIndex: 'studentName',
     key: 'studentName',
   },
